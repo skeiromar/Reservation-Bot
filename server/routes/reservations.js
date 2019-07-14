@@ -4,8 +4,9 @@ const MessagingResponse = require('twilio').twiml.MessagingResponse;
 const date = require('date-and-time');
 const Base64 = require('js-base64').Base64;
 const editJsonFile = require("edit-json-file");
-
 let file = editJsonFile('./db/file.json');
+
+let validator = require('../utilities/isAvailable');
 
 var router = express.Router();
 var dummyDB = {};
@@ -24,16 +25,16 @@ var dummyDB = {};
 // file related test END
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   res.json([
-    {id: 1, name: 'Israfil Jennigje, pary of 2 @ 2pm'},
-    {id: 2, name: 'Abu Aðalsteinn, pary of 8 @ 3pm'},
-    {id: 3, name: 'Kwasi juicy juice, party of 100 @ 10pm'}
+    { id: 1, name: 'Israfil Jennigje, pary of 2 @ 2pm' },
+    { id: 2, name: 'Abu Aðalsteinn, pary of 8 @ 3pm' },
+    { id: 3, name: 'Kwasi juicy juice, party of 100 @ 10pm' }
   ]);
   // res.send('respond with a resource');
 });
 
-router.post('/sms', function(req, res, next) {
+router.post('/sms', function (req, res, next) {
   const twiml = new MessagingResponse();
 
   // logic for updating the database from the request of the user 
@@ -45,18 +46,20 @@ router.post('/sms', function(req, res, next) {
   let msg = req.body.Body.split(' ');
   let name = `${msg[2]} ${msg[3]}`;
   let reservation_date = msg[5];
-  let stringTime = msg[6];  
+  let stringTime = msg[6];
   let ampm = stringTime.slice(stringTime.indexOf('m') - 1);
   let time = parseInt(stringTime.slice(0, stringTime.indexOf('m') - 1));
   let restaurant_name = msg[8];
   let phoneNum = req.body.From;
   let restaurant_id = Base64.encode(restaurant_name + date + time);
-  
+
   let now = new Date();
   let formatNow = date.format(now, 'M-D-YY h-A');
 
-
-  let request = {
+  validationObj = validator(restaurant_name, ampm, time);
+  
+  if (validationObj.valid) {
+     request = {
       [restaurant_id]: {
         id: restaurant_id,
         name,
@@ -65,11 +68,10 @@ router.post('/sms', function(req, res, next) {
           start: [time, ampm], end: [time + 1, ampm]
         },
         created_at: formatNow,
-        restaurant_name, 
+        restaurant_name,
         phone_number: phoneNum
       }
-  };
-  
+    };
 
   file.set(`Persons.${phoneNum}`, request);
 
@@ -77,6 +79,7 @@ router.post('/sms', function(req, res, next) {
     phone_number: phoneNum,
     reservation_id: restaurant_id
   };
+}
 
   file.save();
 
@@ -92,13 +95,13 @@ router.post('/sms', function(req, res, next) {
   // },
 
 
-  twiml.message('Welcome to Reservation Bot, the Bot for Reservations!');
-  res.writeHead(200, {'Content-Type': 'text/xml'});
-  res.end(twiml.toString());  
- 
+  twiml.message(validationObj.msg);
+  res.writeHead(200, { 'Content-Type': 'text/xml' });
+  res.end(twiml.toString());
+
 });
 
-router.get('/list', function(req, res, next) {
+router.get('/list', function (req, res, next) {
   res.json(dummyDB);
 });
 

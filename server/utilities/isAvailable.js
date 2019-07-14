@@ -38,31 +38,37 @@ function validator(restaurant_name, ampm, time){
 //       phone_number: phoneNum
 //     }
 // }
-    let db = file.toObject();
-    if (!db.Resturants[restaurant_name]) {
+let db = file.toObject();
+
+    if (!db.Restaurants[restaurant_name]) {
         return {
             valid: false, 
-            err: `${restaurant_name} does not exist`
+            msg: `${restaurant_name} is not part of our chain of Restaurants`
         };
     } else if (ampm === 'am') {
         return {
             valid: false, 
-            err: `${restaurant_name} hours are from 1pm - 10pm`
+            msg: `${restaurant_name} hours are from 1pm - 10pm`
         };
-    } else if (time >= 1 && time < 10) {
+    } else if (time < 1 && time > 9) {
+        console.log(time);
         return {
             valid: false, 
-            err: `${restaurant_name} hours are from 1pm - 10pm`
+            msg: `${restaurant_name} hours are from 1pm - 10pm`
         };
     } else if (Object.keys(db
-        .Resturants[restaurant_name]
-        .available_slots[time - 1]) > 0) {
+        .Restaurants[restaurant_name]
+        .available_slots[time - 1]).length > 0) {
             return {
                 valid: false, 
-                err: `We are not available at this time`
+                msg: `Our big Round Tabe has already been booked for ${time}:PM Please pick another time`
             };
-    } else if () {
-        
+    } else{
+        return{
+            valid: true,
+            msg: 'Table Reserved. We look forward to seeing you.'
+        }
     }
+    
 }
 module.exports = validator;
