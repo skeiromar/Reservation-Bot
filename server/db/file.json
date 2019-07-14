@@ -1,7 +1,7 @@
 {
   "Restaurants": {
     "Killamanjaro": {
-      "available slots": [
+      "available_slots": [
         {},
         {},
         {},
@@ -9,8 +9,11 @@
         {},
         {},
         {},
-        {},
-        {}  
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA=="
+        },
+        {}
       ],
       "opening_time": [
         1,
@@ -23,30 +26,10 @@
     }
   },
   "Persons": {
-    "19175284316": {
-      "12": {
-        "id": 12,
-        "name": "Xavier Jones",
-        "reservation_date": "12-12-19",
-        "time": {
-          "start": [
-            9,
-            "PM"
-          ],
-          "end": [
-            10,
-            "PM"
-          ]
-        },
-        "created_at": "timestamp placeholder",
-        "restaurant": "Killamanjaro",
-        "phone_number": "19175284316"
-      }
-    },
     "+13475612927": {
-      "S2lsbGFtYW5qYXJv": {
-        "id": "S2lsbGFtYW5qYXJv",
-        "name": "Kwasi Amanfi",
+      "d2VzZXJ2ZWNhdHNbb2JqZWN0IE9iamVjdF04": {
+        "id": "d2VzZXJ2ZWNhdHNbb2JqZWN0IE9iamVjdF04",
+        "name": "jack Amanfi",
         "reservation_date": "7-13-19",
         "reservation_time": {
           "start": [
@@ -58,8 +41,62 @@
             "pm"
           ]
         },
-        "created_at": "7-13-19 7-p.m.",
+        "created_at": "7-13-19 9-p.m.",
+        "restaurant": "weservecats",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==",
+        "name": "jack Amanfi",
+        "reservation_date": "7-13-19",
+        "reservation_time": {
+          "start": [
+            8,
+            "pm"
+          ],
+          "end": [
+            9,
+            "pm"
+          ]
+        },
+        "created_at": "7-13-19 9-p.m.",
         "restaurant": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "dWtlbGVsZVtvYmplY3QgT2JqZWN0XTg=": {
+        "id": "dWtlbGVsZVtvYmplY3QgT2JqZWN0XTg=",
+        "name": "jack Amanfi",
+        "reservation_date": "7-13-19",
+        "reservation_time": {
+          "start": [
+            8,
+            "pm"
+          ],
+          "end": [
+            9,
+            "pm"
+          ]
+        },
+        "created_at": "7-13-19 9-p.m.",
+        "restaurant": "ukelele",
+        "phone_number": "+13475612927"
+      },
+      "S2lbb2JqZWN0IE9iamVjdF04": {
+        "id": "S2lbb2JqZWN0IE9iamVjdF04",
+        "name": "jack Amanfi",
+        "reservation_date": "7-13-19",
+        "reservation_time": {
+          "start": [
+            8,
+            "pm"
+          ],
+          "end": [
+            9,
+            "pm"
+          ]
+        },
+        "created_at": "7-13-19 9-p.m.",
+        "restaurant": "Ki",
         "phone_number": "+13475612927"
       }
     }
