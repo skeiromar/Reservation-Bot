@@ -47,7 +47,7 @@ router.post('/sms', function(req, res, next) {
   let now = new Date();
   let formatNow = date.format(now, 'M-D-YY h-A');
 
-  
+
 
   let request = {
     [phoneNum]: {
@@ -65,6 +65,7 @@ router.post('/sms', function(req, res, next) {
     }
   };
   file.set("Persons", request);
+
   file.save();
 
 
