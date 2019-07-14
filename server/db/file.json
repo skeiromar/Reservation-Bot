@@ -11,10 +11,15 @@
         {},
         {
           "phone_number": "+13475612927",
-          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA=="
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==",
+          "reservation_date": 1563148800000
         },
         {},
-        {}
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMTA=",
+          "reservation_date": 1563156000000
+        }
       ],
       "opening_time": [
         1,
@@ -31,7 +36,7 @@
       "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==": {
         "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==",
         "name": "jack Amanfi",
-        "reservation_date": "7-13-19",
+        "reservation_date": "7-14-19",
         "reservation_time": {
           "start": [
             8,
@@ -42,7 +47,25 @@
             "pm"
           ]
         },
-        "created_at": "7-14-19 11-a.m.",
+        "created_at": "7-14-19 1-p.m.",
+        "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMTA=": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMTA=",
+        "name": "jack Amanfi",
+        "reservation_date": "7-14-19",
+        "reservation_time": {
+          "start": [
+            10,
+            "pm"
+          ],
+          "end": [
+            11,
+            "pm"
+          ]
+        },
+        "created_at": "7-14-19 1-p.m.",
         "restaurant_name": "Killamanjaro",
         "phone_number": "+13475612927"
       }

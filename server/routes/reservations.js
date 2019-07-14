@@ -53,10 +53,13 @@ router.post('/sms', function (req, res, next) {
   let phoneNum = req.body.From;
   let restaurant_id = Base64.encode(restaurant_name + date + time);
 
+  let reservation_date_obj = new Date(date.parse(`${reservation_date} ${time}p.m.`, 'M-D-YY hA'));
+
   let now = new Date();
   let formatNow = date.format(now, 'M-D-YY h-A');
 
-  validationObj = validator(restaurant_name, ampm, time);
+
+  validationObj = validator(restaurant_name, ampm, time, now, reservation_date_obj);
   
   if (validationObj.valid) {
      request = {
@@ -73,15 +76,17 @@ router.post('/sms', function (req, res, next) {
       }
     };
 
-  file.set(`Persons.${phoneNum}`, request);
+    file.set(`Persons.${phoneNum}`, request);
 
-  file.toObject().Restaurants[restaurant_name].available_slots[time - 1] = {
-    phone_number: phoneNum,
-    reservation_id: restaurant_id
-  };
-}
+    file.toObject().Restaurants[restaurant_name].available_slots[time - 1] = {
+      phone_number: phoneNum,
+      reservation_id: restaurant_id,
+      reservation_date: reservation_date_obj.getTime()
+    };
+    file.save();
 
-  file.save();
+  }
+
 
   // "Restaurants": {
   //   "Killamanjaro Suite": {

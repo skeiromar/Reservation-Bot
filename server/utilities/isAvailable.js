@@ -1,7 +1,14 @@
 const editJsonFile = require("edit-json-file");
+const date = require('date-and-time');
+
 let file = editJsonFile('./db/file.json');
 
-function validator(restaurant_name, ampm, time){
+function timeValidation(reser_date_obj, present_date_obj) {
+    return reser_date_obj.getTime() > present_date_obj.getTime();
+}
+
+
+function validator(restaurant_name, ampm, time, date_now, reser_date_obj){
 //    Restaurant = file.toObject();
 //    if (!Restaurant[restaurant]){
 //        return {
@@ -39,8 +46,13 @@ function validator(restaurant_name, ampm, time){
 //     }
 // }
 let db = file.toObject();
-
-    if (!db.Restaurants[restaurant_name]) {
+    
+    if (!timeValidation(reser_date_obj, date_now)) {
+        return {
+            valid: false, 
+            msg: `Please pick a time in the future`
+        };
+    } else if (!db.Restaurants[restaurant_name]) {
         return {
             valid: false, 
             msg: `${restaurant_name} is not part of our chain of Restaurants`
@@ -50,7 +62,7 @@ let db = file.toObject();
             valid: false, 
             msg: `${restaurant_name} hours are from 1pm - 10pm`
         };
-    } else if (time < 1 && time > 9) {
+    } else if (time < 1 || time > 9) {
         console.log(time);
         return {
             valid: false, 
@@ -63,11 +75,11 @@ let db = file.toObject();
                 valid: false, 
                 msg: `Our big Round Tabe has already been booked for ${time}:PM Please pick another time`
             };
-    } else{
+    } else {
         return{
             valid: true,
             msg: 'Table Reserved. We look forward to seeing you.'
-        }
+        };
     }
     
 }
