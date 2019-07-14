@@ -1,6 +1,5 @@
 var express = require('express');
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
-// const { createReservation } = require('../firebase/firebaseUtilities');
 const date = require('date-and-time');
 const Base64 = require('js-base64').Base64;
 const editJsonFile = require("edit-json-file");
@@ -10,30 +9,6 @@ let dbAPI  = require('../utilities/dbAPI');
 let validator = require('../utilities/isAvailable');
 
 var router = express.Router();
-var dummyDB = {};
-
-// file related test START 
-// file.set(`Restaurants.${"Killamanjaro"}.available_slots`[2], {
-//   phone_number: "+13475612927",
-//   reservation_id: "123"
-// });
-// file.save();
-// file.toObject().Restaurants.Killamanjaro.available_slots[2] = {h:1};
-// file.save();
-
-// const now = new Date();
-// console.log(date.format(now, 'MM-DD-YY h-A'));
-// file related test END
-
-/* GET users listing. */
-router.get('/', function (req, res, next) {
-  res.json([
-    { id: 1, name: 'Israfil Jennigje, pary of 2 @ 2pm' },
-    { id: 2, name: 'Abu Aðalsteinn, pary of 8 @ 3pm' },
-    { id: 3, name: 'Kwasi juicy juice, party of 100 @ 10pm' }
-  ]);
-  // res.send('respond with a resource');
-});
 
 router.post('/sms', function (req, res, next) {
   const twiml = new MessagingResponse();
@@ -88,19 +63,6 @@ router.post('/sms', function (req, res, next) {
 
   }
 
-
-  // "Restaurants": {
-  //   "Killamanjaro Suite": {
-  //       "available_slots": [ {
-  //           "phone_number": "19175284316", 
-  //           "reservation_id": "12"
-  //       }, {}, {}, {}, {}, {}, {}, {}, {} ],
-  //       "opening_time": [1, "PM"],
-  //       "closing_time": [10, "PM"]
-  //   }
-  // },
-
-
   twiml.message(validationObj.msg);
   res.writeHead(200, { 'Content-Type': 'text/xml' });
   res.end(twiml.toString());
@@ -108,7 +70,7 @@ router.post('/sms', function (req, res, next) {
 });
 
 router.get('/restaurants', function (req, res, next) {
-  list =dbAPI.getRestaurants();
+  list = dbAPI.getRestaurants();
   res.json(list);
 });
 
