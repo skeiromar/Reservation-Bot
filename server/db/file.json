@@ -1,0 +1,67 @@
+{
+  "Restaurants": {
+    "Killamanjaro": {
+      "available slots": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}  
+      ],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    }
+  },
+  "Persons": {
+    "19175284316": {
+      "12": {
+        "id": 12,
+        "name": "Xavier Jones",
+        "reservation_date": "12-12-19",
+        "time": {
+          "start": [
+            9,
+            "PM"
+          ],
+          "end": [
+            10,
+            "PM"
+          ]
+        },
+        "created_at": "timestamp placeholder",
+        "restaurant": "Killamanjaro",
+        "phone_number": "19175284316"
+      }
+    },
+    "+13475612927": {
+      "S2lsbGFtYW5qYXJv": {
+        "id": "S2lsbGFtYW5qYXJv",
+        "name": "Kwasi Amanfi",
+        "reservation_date": "7-13-19",
+        "reservation_time": {
+          "start": [
+            8,
+            "pm"
+          ],
+          "end": [
+            9,
+            "pm"
+          ]
+        },
+        "created_at": "7-13-19 7-p.m.",
+        "restaurant": "Killamanjaro",
+        "phone_number": "+13475612927"
+      }
+    }
+  }
+}
