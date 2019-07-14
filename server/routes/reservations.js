@@ -6,6 +6,7 @@ const Base64 = require('js-base64').Base64;
 const editJsonFile = require("edit-json-file");
 let file = editJsonFile('./db/file.json');
 
+let dbAPI  = require('../utilities/dbAPI');
 let validator = require('../utilities/isAvailable');
 
 var router = express.Router();
@@ -77,7 +78,8 @@ router.post('/sms', function (req, res, next) {
 
   file.toObject().Restaurants[restaurant_name].available_slots[time - 1] = {
     phone_number: phoneNum,
-    reservation_id: restaurant_id
+    reservation_id: restaurant_id,
+    start_time: time
   };
 }
 
@@ -101,8 +103,14 @@ router.post('/sms', function (req, res, next) {
 
 });
 
+router.get('/restaurants', function (req, res, next) {
+  list =dbAPI.getRestaurants();
+  res.json(list);
+});
+
 router.get('/list', function (req, res, next) {
-  res.json(dummyDB);
+  list =dbAPI.getReservations(req.body.name);
+  res.json(list);
 });
 
 

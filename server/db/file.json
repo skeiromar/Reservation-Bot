@@ -11,7 +11,8 @@
         {},
         {
           "phone_number": "+13475612927",
-          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA=="
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==",
+          "start_time": 8
         },
         {},
         {}
@@ -42,7 +43,7 @@
             "pm"
           ]
         },
-        "created_at": "7-14-19 11-a.m.",
+        "created_at": "7-14-19 1-p.m.",
         "restaurant_name": "Killamanjaro",
         "phone_number": "+13475612927"
       }
