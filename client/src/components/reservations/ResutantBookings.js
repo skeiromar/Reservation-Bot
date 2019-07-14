@@ -13,7 +13,7 @@ function ResutantBookings(props) {
         getBookings();
     }, []);
 
-    { debugger }
+
     const lis = bookings.map(booking => {
         return (
             <>

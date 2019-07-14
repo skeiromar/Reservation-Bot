@@ -13,6 +13,7 @@
           "phone_number": "+13475612927",
           "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA=="
         },
+        {},
         {}
       ],
       "opening_time": [
@@ -27,24 +28,6 @@
   },
   "Persons": {
     "+13475612927": {
-      "d2VzZXJ2ZWNhdHNbb2JqZWN0IE9iamVjdF04": {
-        "id": "d2VzZXJ2ZWNhdHNbb2JqZWN0IE9iamVjdF04",
-        "name": "jack Amanfi",
-        "reservation_date": "7-13-19",
-        "reservation_time": {
-          "start": [
-            8,
-            "pm"
-          ],
-          "end": [
-            9,
-            "pm"
-          ]
-        },
-        "created_at": "7-13-19 9-p.m.",
-        "restaurant": "weservecats",
-        "phone_number": "+13475612927"
-      },
       "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==": {
         "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==",
         "name": "jack Amanfi",
@@ -59,44 +42,8 @@
             "pm"
           ]
         },
-        "created_at": "7-13-19 9-p.m.",
-        "restaurant": "Killamanjaro",
-        "phone_number": "+13475612927"
-      },
-      "dWtlbGVsZVtvYmplY3QgT2JqZWN0XTg=": {
-        "id": "dWtlbGVsZVtvYmplY3QgT2JqZWN0XTg=",
-        "name": "jack Amanfi",
-        "reservation_date": "7-13-19",
-        "reservation_time": {
-          "start": [
-            8,
-            "pm"
-          ],
-          "end": [
-            9,
-            "pm"
-          ]
-        },
-        "created_at": "7-13-19 9-p.m.",
-        "restaurant": "ukelele",
-        "phone_number": "+13475612927"
-      },
-      "S2lbb2JqZWN0IE9iamVjdF04": {
-        "id": "S2lbb2JqZWN0IE9iamVjdF04",
-        "name": "jack Amanfi",
-        "reservation_date": "7-13-19",
-        "reservation_time": {
-          "start": [
-            8,
-            "pm"
-          ],
-          "end": [
-            9,
-            "pm"
-          ]
-        },
-        "created_at": "7-13-19 9-p.m.",
-        "restaurant": "Ki",
+        "created_at": "7-14-19 11-a.m.",
+        "restaurant_name": "Killamanjaro",
         "phone_number": "+13475612927"
       }
     }
