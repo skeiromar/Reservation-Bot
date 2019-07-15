@@ -50,7 +50,7 @@ let db = file.toObject();
     if (!timeValidation(reser_date_obj, date_now)) {
         return {
             valid: false, 
-            msg: `Please pick a time in the future`
+            msg: `We have not mastered time travel yet....Please pick a time in the future`
         };
     } else if (!db.Restaurants[restaurant_name]) {
         return {

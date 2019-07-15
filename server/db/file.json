@@ -14,7 +14,11 @@
           "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNA==",
           "reservation_date": 1563220800000
         },
-        {},
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNQ==",
+          "reservation_date": 1563224400000
+        },
         {},
         {},
         {
@@ -45,6 +49,98 @@
         {},
         {},
         {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "The Rhind": {
+      "available_slots": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "Your Mother's Soup": {
+      "available_slots": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "Gallachelllo": {
+      "available_slots": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "Marcalo": {
+      "available_slots": [
+        {},
+        {},
+        {},
+        {},
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "TWFyY2Fsb1tvYmplY3QgT2JqZWN0XTU=",
+          "reservation_date": 1563224400000
+        },
         {},
         {},
         {},
@@ -133,6 +229,42 @@
         },
         "created_at": "7-14-19 10-p.m.",
         "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNQ==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNQ==",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            5,
+            "pm"
+          ],
+          "end": [
+            6,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 2-p.m.",
+        "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "TWFyY2Fsb1tvYmplY3QgT2JqZWN0XTU=": {
+        "id": "TWFyY2Fsb1tvYmplY3QgT2JqZWN0XTU=",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            5,
+            "pm"
+          ],
+          "end": [
+            6,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 2-p.m.",
+        "restaurant_name": "Marcalo",
         "phone_number": "+13475612927"
       }
     }

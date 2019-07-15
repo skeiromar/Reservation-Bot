@@ -26,27 +26,37 @@ function ReservationList(props) {
     }, []);
 
     let ReserveCol = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    let CurrentHour = moment(Date.now()).format("h")
     let results = reservations.map(reservation => {
-
-        if (moment(reservation.reservation_date).format("dddd, MMMM Do YYYY") == moment(Date.now()).format("dddd, MMMM Do YYYY")) {
+        //if the same day
+        if (moment(reservation.reservation_date).format("dddd, MMMM Do YYYY") === moment(Date.now()).format("dddd, MMMM Do YYYY")) {
             let hour = parseInt(moment(reservation.reservation_date).format("h"));
             let booking = moment(reservation.reservation_date).format("hA");
-            console.log(Date.now())
+            console.log(Date.now());
             ReserveCol[hour - 1] = (booking);
         }
     })
 
     for (let i = 0; i < 9; i++) {
-        if (ReserveCol[i] == 0) {
+        //if i is > hour, means ==> we can book/show reservations
+        if ( i+1 > CurrentHour){
+            if (ReserveCol[i] == 0) {
+                ReserveCol[i] = (
+                    <div className="columns" key={i}>
+                        <div className="column">{i + 1}PM-AVAILABLE</div>
+                    </div>
+                )
+            } else {
+                ReserveCol[i] = (
+                    <div className="columns" key={i}>
+                        <div className="column">{i + 1}PM - BOOKED</div>
+                    </div>
+                )
+            }
+        }else{
             ReserveCol[i] = (
                 <div className="columns" key={i}>
-                    <div className="column">{i + 1}PM EMPTY BOOKING</div>
-                </div>
-            )
-        } else {
-            ReserveCol[i] = (
-                <div className="columns" key={i}>
-                    <div className="column">{i + 1}PM BOOKED</div>
+                    <div className="column" id="line">{i + 1}PM-UNAVILABLE</div>
                 </div>
             )
         }

@@ -16,9 +16,11 @@ function ResturantList() {
         fetchReservations();
     }, []);
 
+    let count =1;
     let restaurantCard = restaurants.map(restaurant => {
+        count +=1;
         return (
-            <ResurantListIndex name={restaurant} />
+            <ResurantListIndex name={restaurant} key={count} />
         )
     })
 

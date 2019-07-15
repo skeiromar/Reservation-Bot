@@ -2,6 +2,10 @@
   text-align: center;
   justify-content: center;
 }
+#line{
+  text-decoration: line-through;
+  color: red;
+}
 .Mycard{
   margin-bottom: 10px;
 }
