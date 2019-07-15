@@ -2,23 +2,107 @@
   "Restaurants": {
     "Killamanjaro": {
       "available_slots": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
         {
           "phone_number": "+13475612927",
-          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==",
-          "reservation_date": 1563148800000
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNQ==",
+          "reservation_date": 1563224400000
         },
-        {},
         {
           "phone_number": "+13475612927",
-          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMTA=",
-          "reservation_date": 1563156000000
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNQ==",
+          "reservation_date": 1563397200000
+        },
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNw==",
+          "reservation_date": 1563404400000
+        },
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNw==",
+          "reservation_date": 1563231600000
+        },
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOQ==",
+          "reservation_date": 1563238800000
+        },
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNQ==",
+          "reservation_date": 1563310800000
+        },
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOQ==",
+          "reservation_date": 1563325200000
+        }
+      ],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "elBulli": {
+      "available_slots": [
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "UGl6emFbb2JqZWN0IE9iamVjdF01",
+          "reservation_date": 1563224400000
+        }
+      ],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "Ducks": {
+      "available_slots": [],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "Soups": {
+      "available_slots": [],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "Mirazur": {
+      "available_slots": [],
+      "opening_time": [
+        1,
+        "PM"
+      ],
+      "closing_time": [
+        10,
+        "PM"
+      ]
+    },
+    "Noma": {
+      "available_slots": [
+        {
+          "phone_number": "+13475612927",
+          "reservation_id": "Tm9tYVtvYmplY3QgT2JqZWN0XTU=",
+          "reservation_date": 1563224400000
         }
       ],
       "opening_time": [
@@ -36,7 +120,7 @@
       "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==": {
         "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOA==",
         "name": "jack Amanfi",
-        "reservation_date": "7-14-19",
+        "reservation_date": "7-15-19",
         "reservation_time": {
           "start": [
             8,
@@ -47,26 +131,188 @@
             "pm"
           ]
         },
-        "created_at": "7-14-19 1-p.m.",
+        "created_at": "7-14-19 7-p.m.",
         "restaurant_name": "Killamanjaro",
         "phone_number": "+13475612927"
       },
-      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMTA=": {
-        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMTA=",
-        "name": "jack Amanfi",
-        "reservation_date": "7-14-19",
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOQ==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdOQ==",
+        "name": "omar moi",
+        "reservation_date": "7-16-19",
         "reservation_time": {
           "start": [
-            10,
+            9,
             "pm"
           ],
           "end": [
-            11,
+            10,
             "pm"
           ]
         },
-        "created_at": "7-14-19 1-p.m.",
+        "created_at": "7-15-19 3-p.m.",
         "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNA==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNA==",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            4,
+            "pm"
+          ],
+          "end": [
+            5,
+            "pm"
+          ]
+        },
+        "created_at": "7-14-19 10-p.m.",
+        "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMg==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMg==",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            2,
+            "pm"
+          ],
+          "end": [
+            3,
+            "pm"
+          ]
+        },
+        "created_at": "7-14-19 10-p.m.",
+        "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNQ==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNQ==",
+        "name": "omar moi",
+        "reservation_date": "7-16-19",
+        "reservation_time": {
+          "start": [
+            5,
+            "pm"
+          ],
+          "end": [
+            6,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 3-p.m.",
+        "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "TWFyY2Fsb1tvYmplY3QgT2JqZWN0XTU=": {
+        "id": "TWFyY2Fsb1tvYmplY3QgT2JqZWN0XTU=",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            5,
+            "pm"
+          ],
+          "end": [
+            6,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 2-p.m.",
+        "restaurant_name": "Marcalo",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNg==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNg==",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            6,
+            "pm"
+          ],
+          "end": [
+            7,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 2-p.m.",
+        "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMw==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdMw==",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            3,
+            "pm"
+          ],
+          "end": [
+            4,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 2-p.m.",
+        "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNw==": {
+        "id": "S2lsbGFtYW5qYXJvW29iamVjdCBPYmplY3RdNw==",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            7,
+            "pm"
+          ],
+          "end": [
+            8,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 3-p.m.",
+        "restaurant_name": "Killamanjaro",
+        "phone_number": "+13475612927"
+      },
+      "UGl6emFbb2JqZWN0IE9iamVjdF01": {
+        "id": "UGl6emFbb2JqZWN0IE9iamVjdF01",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            5,
+            "pm"
+          ],
+          "end": [
+            6,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 3-p.m.",
+        "restaurant_name": "Pizza",
+        "phone_number": "+13475612927"
+      },
+      "Tm9tYVtvYmplY3QgT2JqZWN0XTU=": {
+        "id": "Tm9tYVtvYmplY3QgT2JqZWN0XTU=",
+        "name": "omar moi",
+        "reservation_date": "7-15-19",
+        "reservation_time": {
+          "start": [
+            5,
+            "pm"
+          ],
+          "end": [
+            6,
+            "pm"
+          ]
+        },
+        "created_at": "7-15-19 3-p.m.",
+        "restaurant_name": "Noma",
         "phone_number": "+13475612927"
       }
     }
