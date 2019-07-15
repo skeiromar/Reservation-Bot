@@ -6,6 +6,9 @@
   text-decoration: line-through;
   color: red;
 }
+#available{
+  color:green;
+}
 .Mycard{
   margin-bottom: 10px;
 }

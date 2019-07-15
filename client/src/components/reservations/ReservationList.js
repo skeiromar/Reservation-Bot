@@ -32,7 +32,6 @@ function ReservationList(props) {
         if (moment(reservation.reservation_date).format("dddd, MMMM Do YYYY") === moment(Date.now()).format("dddd, MMMM Do YYYY")) {
             let hour = parseInt(moment(reservation.reservation_date).format("h"));
             let booking = moment(reservation.reservation_date).format("hA");
-            console.log(Date.now());
             ReserveCol[hour - 1] = (booking);
         }
     })
@@ -43,7 +42,7 @@ function ReservationList(props) {
             if (ReserveCol[i] == 0) {
                 ReserveCol[i] = (
                     <div className="columns" key={i}>
-                        <div className="column">{i + 1}PM-AVAILABLE</div>
+                        <div className="column" id="available">{i + 1}PM-AVAILABLE</div>
                     </div>
                 )
             } else {

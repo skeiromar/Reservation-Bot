@@ -61,7 +61,7 @@ router.post('/sms', function (req, res, next) {
 
 
   validationObj = validator(restaurant_name, ampm, time, now, reservation_date_obj);
-  
+
   if (validationObj.valid) {
      request = {
       [restaurant_id]: {
@@ -78,12 +78,13 @@ router.post('/sms', function (req, res, next) {
     };
 
     file.set(`Persons.${phoneNum}`, request);
+    console.log(restaurant_name);
 
-    file.toObject().Restaurants[restaurant_name].available_slots[time - 1] = {
+    file.toObject().Restaurants[restaurant_name].available_slots.push({
       phone_number: phoneNum,
       reservation_id: restaurant_id,
       reservation_date: reservation_date_obj.getTime()
-    };
+    })
     file.save();
 
   }
