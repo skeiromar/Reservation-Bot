@@ -2,7 +2,11 @@
 
 [Live Site incoming...](#)
 
-![](/app/assets/images/Readme/logIn.png)
+### Restaurant index page:
+![](2019-07-15-18-15-49.png)
+
+### Reservation list page:
+![](2019-07-15-18-16-16.png)
 
 Reservation bot is basic bot that utilizes Twillios api to make reservations.
 
@@ -26,10 +30,4 @@ Reservation bot is basic bot that utilizes Twillios api to make reservations.
 * SMS - Users can book a restaurants by sending an SMS msg.
 * Reservations  - Users can check the availability of reservations for the day
 
-## Challanges 
-* Incoming.....
 
-```
-
-## Upcoming Features
-* View Reservations by day.
