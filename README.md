@@ -1,15 +1,35 @@
+# Reservation Bot
 
-## Reservation Bot 
+[Live Site incoming...](#)
 
-A web app using twilio API to make hypothetical restaurant reservations. Text the number on the website in a specific format to make a reservation at that restaurant. 
+![](/app/assets/images/Readme/logIn.png)
+
+Reservation bot is basic bot that utilizes Twillios api to make reservations.
+
+## Technologies
+
+* Express 
+* Twilio API 
+* React
+
+## Built With
+
+* Express to implement the backend framework
+* Twilio API to implement to facilitate sending/recieving of SMS
+* Coustom JSon Object to hold  for the database
+* React for the Frontend
+* Fetch API to access backend through Thunk actions
 
 
-## How to run it? 
+## Core Functionality
 
-    1. Clone the repo
-    2. `npm install` in both the server and client folder
+* SMS - Users can book a restaurants by sending an SMS msg.
+* Reservations  - Users can check the availability of reservations for the day
 
+## Challanges 
+* Incoming.....
 
+```
 
-// We cannot run this, this is merely a dev environment and we need ngrok and what not. Talk to kwasi 
-
+## Upcoming Features
+* View Reservations by day.

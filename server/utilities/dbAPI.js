@@ -3,7 +3,9 @@ let file = editJsonFile('./db/file.json');
 let db = file.toObject();
 
 function getRestaurants() {
-    return (db.Restaurants);
+    // console.log(Object.keys(db.Restaurants));
+    return (Object.keys(db.Restaurants));
+
 }
 
 function getReservations(restaurants_name) {
@@ -12,7 +14,7 @@ function getReservations(restaurants_name) {
         return (Object.keys(booking).length > 0 && booking.reservation_date - new Date().getTime() > 3600000);
     });
     //get 
-    return reservation
+    return reservation;
 }
 
 module.exports = {
