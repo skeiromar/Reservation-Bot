@@ -8,6 +8,10 @@ Reservation bot is basic bot that utilizes Twillios api to make reservations.
 
 ## Technologies
 
+* Express 
+* Twilio API 
+* React
+
 ## Built With
 
 * Express to implement the backend framework
