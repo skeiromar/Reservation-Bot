@@ -109,10 +109,12 @@ router.post('/sms', function (req, res, next) {
 
 router.get('/restaurants', function (req, res, next) {
   list =dbAPI.getRestaurants();
+  console.log(list);
   res.json(list);
 });
 
-router.get('/list', function (req, res, next) {
+router.post('/list', function (req, res, next) {
+  console.log(req.body)
   list =dbAPI.getReservations(req.body.name);
   res.json(list);
 });
